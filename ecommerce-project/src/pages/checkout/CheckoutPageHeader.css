@@ -67,7 +67,8 @@
 }
 
 .checkout-header .return-to-home-link {
-  color: rgb(25, 135, 84);
+  color: white;
+  font-weight: 700;
 
   text-decoration: none;
   cursor: pointer;

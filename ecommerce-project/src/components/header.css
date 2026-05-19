@@ -1,5 +1,5 @@
 .header {
-  background-color: rgb(8, 79, 45);
+  background-color: rgb(10, 55, 140);
   color: white;
   padding-left: 15px;
   padding-right: 15px;
@@ -32,6 +32,8 @@
   cursor: pointer;
   text-decoration: none;
   border: 1px solid rgba(0, 0, 0, 0);
+  color: white;
+  font-weight: 700;
 }
 
 .header .header-link:hover {
@@ -81,7 +83,7 @@
 }
 
 .header .search-button {
-  background-color: rgb(186, 255, 190);
+  background-color: rgb(193, 225, 255);
   border: none;
   width: 45px;
   height: 40px;
@@ -136,7 +138,7 @@
 }
 
 .header .cart-quantity {
-  color: rgb(8, 79, 45);
+  color: rgb(13, 110, 253);
   font-size: 14px;
   font-weight: 700;
 
