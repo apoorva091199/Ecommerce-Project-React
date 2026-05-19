@@ -1,10 +1,10 @@
-import { Header } from "../components/Header";
+import { Header } from "../../components/Header";
 import "./OrdersPage.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { Fragment, useEffect, useState } from "react";
 import dayjs from "dayjs";
-import { formatMoney } from "../utils/Money";
+import { formatMoney } from "../../utils/Money";
 
 export function OrdersPage({ cart }) {
   const [orders, setOrders] = useState([]);
@@ -89,14 +89,8 @@ export function OrdersPage({ cart }) {
               </div>
             );
           })}
-
-          
-
-            
-             
-            </div>
-          </div>
-      
+        </div>
+      </div>
     </>
   );
 }
