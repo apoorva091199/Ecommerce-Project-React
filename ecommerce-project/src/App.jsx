@@ -12,7 +12,7 @@ function App() {
 
 
   useEffect(() => {
-        axios.get("http://localhost:3000/api/cart-items")
+        axios.get("http://localhost:3000/api/cart-items?_expand=product")
           .then((response) => {
           setCart(response.data);
           });
