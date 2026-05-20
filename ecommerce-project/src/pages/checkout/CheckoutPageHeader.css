@@ -2,7 +2,8 @@
   height: 60px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: white;
+  background-color: var(--color-header-bg);
+  color: var(--color-header-text);
 
   display: flex;
   justify-content: center;
@@ -24,6 +25,11 @@
 
 .checkout-header .checkout-header-left-section {
   width: 200px;
+}
+
+.checkout-header .checkout-header-left-section a {
+  color: var(--color-header-text);
+  text-decoration: none;
 }
 
 .checkout-header .logo {
@@ -67,7 +73,7 @@
 }
 
 .checkout-header .return-to-home-link {
-  color:rgba(13, 110, 253, 0.5);;
+  color: var(--color-header-text);
   font-weight: 700;
 
   text-decoration: none;

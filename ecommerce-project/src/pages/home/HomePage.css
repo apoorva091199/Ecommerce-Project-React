@@ -112,7 +112,7 @@
 }
 
 .home-page .product-rating-count {
-  color: rgb(13, 110, 253);
+  color: var(--color-accent);
   cursor: auto;
   margin-top: 3px;
 }
@@ -131,7 +131,7 @@
 }
 
 .home-page .added-to-cart {
-  color: rgb(13, 110, 253);
+  color: var(--color-accent);
   font-size: 16px;
 
   display: flex;

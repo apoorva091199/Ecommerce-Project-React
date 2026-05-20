@@ -1,6 +1,16 @@
+:root {
+  --color-header-bg: #c17a63;
+  --color-page-bg: #f7f4ef;
+  --color-accent: #c17a63;
+  --color-header-text: #fffdf9;
+  --color-body-text: #2b2625;
+  --color-border: rgba(43, 38, 37, 0.15);
+}
+
 body {
   font-family: Roboto, Arial;
-  color: rgb(33, 33, 33);
+  color: var(--color-body-text);
+  background-color: var(--color-page-bg);
   /* The <body> element has a default margin of 8px
      on all sides. This removes the default margins. */
   margin: 0;
@@ -28,7 +38,7 @@ button {
 
 .button-primary {
   color: rgb(255, 255, 255);
-  background-color: rgb(13, 110, 253);
+  background-color: var(--color-accent);
   border: 1px solid transparent;
   border-radius: 5px;
   cursor: pointer;
@@ -36,12 +46,12 @@ button {
 }
 
 .button-primary:hover {
-  background-color: rgba(13, 110, 253, 0.75);
+  background-color: rgba(193, 122, 99, 0.9);
   border: 1px solid transparent;
 }
 
 .button-primary:active {
-  background: rgba(13, 110, 253, 0.5);
+  background: rgba(193, 122, 99, 0.65);
   border-color: transparent;
   box-shadow: none;
 }
@@ -77,7 +87,7 @@ button {
 }
 
 .link-primary {
-  color: rgb(13, 110, 253);
+  color: var(--color-accent);
   cursor: pointer;
 }
 
@@ -103,5 +113,5 @@ select {
 
 select:focus,
 input:focus {
-  outline: 2px solid rgb(13, 110, 253);
+  outline: 2px solid var(--color-accent);
 }
