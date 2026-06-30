@@ -5,9 +5,13 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { OrderSummary } from "./OrderSummary";
 import { PaymentSummary } from "./PaymentSummary";
+
 export function CheckoutPage({ cart,loadCart }) {
   const [deliveryOptions, setDeliveryOptions] = useState([]);
   const [paymentSummary, setPaymentSummary] = useState(null);
+  const totalItems = (cart || []).reduce((sum, cartItem) => {
+    return sum + cartItem.quantity;
+  }, 0);
 
   useEffect(() => {
     const getCheckoutData = async () => {
@@ -36,7 +40,7 @@ export function CheckoutPage({ cart,loadCart }) {
           <div className="checkout-header-middle-section">
             Checkout (
             <Link to="/" className="return-to-home-link">
-              3 items
+              {totalItems} {totalItems === 1 ? "item" : "items"}
             </Link>
             )
           </div>
